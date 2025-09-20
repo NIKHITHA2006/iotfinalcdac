@@ -9,7 +9,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  esbuild: {
-    target: "esnext",
-  }
+  build: {
+    target: "esnext",   // ✅ correct place for target
+  },
 })
